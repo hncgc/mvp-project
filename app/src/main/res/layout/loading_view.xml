@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pccb.newapp.view.ProgressWheel
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loading_view_rw"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    wheel:matProg_barColor="@color/common_theme_color"
+    wheel:matProg_progressIndeterminate="true" />

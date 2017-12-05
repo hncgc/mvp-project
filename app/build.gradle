@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'org.greenrobot.greendao'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.pccb.newapp"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true //加上后使用矢量图小米（4.4.4）闪退 华为Mate8正常
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    // 自定义数据库路径
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.pccb.newapp.greendao.gen'
+        targetGenDir 'src/main/java'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'SERVER_ADDRESS', '"https://openapi.pccb.com/"'
+        }
+
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles 'proguard-rules.pro'
+            //buildConfigField 'String', 'SERVER_ADDRESS', '"http://dev.pccb.com:804/"'
+            buildConfigField 'String', 'SERVER_ADDRESS', '"https://openapi.pccb.com/"'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "com.android.support:design:$supportLibVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation "com.android.support:support-vector-drawable:$supportLibVersion"
+    implementation "com.android.support:support-v4:$supportLibVersion"
+    // 日志
+    implementation 'com.orhanobut:logger:2.1.1'
+    // 数据库
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'org.greenrobot:greendao-generator:3.2.2'
+    //Android M 权限管理
+    implementation 'pub.devrel:easypermissions:1.0.1'
+
+    implementation 'com.android.support:multidex:1.0.2'
+
+    implementation 'io.reactivex:rxjava:1.2.3'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.2.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    implementation 'com.trello:rxlifecycle-components:1.0'
+
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.zyao89:zloading:1.0.8'
+
+    // 动画
+    implementation 'com.nineoldandroids:library:2.4.0'
+
+    // 下拉刷新，上拉加载更多 https://github.com/nuptboyzhb/SuperSwipeRefreshLayout
+    //implementation 'com.github.nuptboyzhb.lib.uikit:superswiperefreshlayout:1.0.0'
+
+    // SmartRefreshLayout 刷新 https://github.com/scwang90/SmartRefreshLayout
+    //稳定版
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'//没有使用特殊Header，可以不加这行
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.android.support:support-v4:26.0.0-beta1'
+    implementation 'com.android.support:recyclerview-v7:26.0.0-beta1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:0.5'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+}

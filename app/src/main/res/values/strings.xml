@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">普资金服</string>
+
+    <!--通用文本 start-->
+    <string name="common_btn_confirm">确定</string>
+    <string name="common_btn_cancel">取消</string>
+    <!--通用文本 end-->
+
+    <string name="title_home">首页</string>
+    <string name="title_product">产品</string>
+    <string name="title_consultant">顾问</string>
+    <string name="title_forum">论坛</string>
+    <string name="title_my">我的</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_home_fragment">Hello home fragment</string>
+    <string name="hello_product_fragment">Hello Product fragment</string>
+    <string name="hello_consultant_fragment">Hello Consultant fragment</string>
+    <string name="hello_forum_fragment">Hello Forum fragment</string>
+    <string name="hello_my_fragment">Hello My fragment</string>
+
+    <string name="versionname_unknown">版本名称错误</string>
+
+    <!-- 应用退出提示 -->
+    <string name="you_are_sure_appexit">确定要退出吗?</string>
+    <string name="text_close">关闭</string>
+
+    <!-- 错误提示 -->
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="rationale_camera">This app needs access to your camera so you can take pictures.</string>
+    <string name="rationale_location_contacts">This app needs access to your location and contacts to know where and who you are.</string>
+    <string name="rationale_sms">This app needs access to your sms to read all your great messages.</string>
+    <string name="returned_from_app_settings_to_activity">
+        Returned from app settings to MainActivity with the following permissions:
+        \n\nCamera: %s
+        \nLocation &amp; Contacts: %s
+        \nSMS: %s
+    </string>
+    <string name="camera">Camera</string>
+    <string name="location_and_contacts">Location and Contacts</string>
+    <string name="sms">SMS</string>
+
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fffbf2"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:background="@drawable/btn_guide"
+        android:layout_width="@dimen/guide_btn_width"
+        android:layout_height="@dimen/guide_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/guide_dot_bottom"
+        android:layout_centerHorizontal="true"
+        android:text="立即开启"
+        android:textSize="18dp"
+        android:textColor="#342e16"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

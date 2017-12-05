@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ebaf00</color>
+    <color name="colorPrimaryNew">#331d11</color>
+    <color name="colorPrimaryDark">#704C0C</color>
+    <color name="status_bar_color">@color/colorPrimaryDark</color>
+    <color name="colorPrimaryNew4">#ffbe00</color>
+
+    <color name="textColorPrimary">#999999</color>
+    <color name="textColorPrimaryDark">#666666</color>
+
+    <color name="colorAccent">#EC0D1A</color>
+    <color name="colorGrayLight">#e1e1e1</color>
+    <color name="colorBlack">#333333</color>
+    <color name="tab_light_color">#666666</color>
+    <color name="tab_color">#B3B3B3</color>
+
+    <color name="common_divider_color">#d6d6d6</color>
+    <color name="color_divider">#dddddd</color>
+    <color name="background">#f5f7f9</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half">#a0000000</color>
+
+    <color name="Orange">#e75946</color>
+    <color name="Yellow">#f4d227</color>
+    <color name="Blue">#4674e7</color>
+    <color name="Green">#0ba62c</color>
+    <color name="gray">#e8eae8</color>
+    <color name="DarkGray">#a9a9a9</color>
+    <color name="white">#ffffff</color>
+
+    <color name="press">#f5f5f5</color>
+
+    <color name="float_transparent">#00000000</color>
+
+    <color name="common_actionbar_bg">#331d11</color>
+    <color name="common_theme_color">#331d11</color>
+
+    <!-- 统一字体颜色 -->
+    <color name="common_text_small_color">#585858</color>
+    <color name="common_text_middle_color">#666666</color>
+    <color name="common_text_large_color">#999999</color>
+
+    <!-- 投资项目 -->
+    <color name="invest_countdown_gray">#FFaac3ce</color>
+    <color name="text_item_name">#061C2E</color>
+    <color name="account_gray">#999999</color>
+    <color name="text_color_red_02">#FF7A00</color>
+
+</resources>
