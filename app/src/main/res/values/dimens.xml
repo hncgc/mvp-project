@@ -7,7 +7,7 @@
     <dimen name="main_tabbar_height">58dp</dimen>
     <dimen name="margin_main_tabbar">5dp</dimen>
 
-    <dimen name="system_status_height">20dp</dimen>
+    <dimen name="system_status_height">24dp</dimen>
 
     <!-- 通用边线高度 -->
     <dimen name="divider_height">0.5dp</dimen>

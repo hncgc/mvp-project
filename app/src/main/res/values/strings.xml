@@ -16,11 +16,11 @@
     <string name="title_notifications">Notifications</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_home_fragment">Hello home fragment</string>
-    <string name="hello_product_fragment">Hello Product fragment</string>
-    <string name="hello_consultant_fragment">Hello Consultant fragment</string>
-    <string name="hello_forum_fragment">Hello Forum fragment</string>
-    <string name="hello_my_fragment">Hello My fragment</string>
+    <string name="title_home_fragment">首页</string>
+    <string name="title_product_fragment">产品</string>
+    <string name="title_consultant_fragment">明星顾问</string>
+    <string name="title_forum_fragment">会员社区</string>
+    <string name="title_my_fragment">用户中心</string>
 
     <string name="versionname_unknown">版本名称错误</string>
 

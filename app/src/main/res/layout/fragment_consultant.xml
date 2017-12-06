@@ -1,23 +1,36 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffcf88"
+    android:background="@color/colorPrimary"
     android:fitsSystemWindows="true"
     android:paddingTop="@dimen/system_status_height"
+    android:orientation="vertical"
     tools:context="com.pccb.newapp.ui.ConsultantFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/title_consultant_fragment"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_consultant_fragment" />
+        android:orientation="vertical"
+        android:background="@color/white">
 
-    <android.support.v7.widget.AppCompatImageView
-        android:id="@+id/titleBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_arrow_back_black_24dp"/>
+    </LinearLayout>
 
-</FrameLayout>
+
+</LinearLayout>
